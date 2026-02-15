@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mind in Motion | Strategic Thinking</title>
+    <meta name="description"
+        content="Mind in Motion - A digital identity based on chess strategy, foresight, and the decisive move.">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;900&family=Inter:wght@300;400;600&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="styles.css">
+    <!-- Three.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+</head>
+
+<body>
+
+    <header class="hero-section">
+        <nav class="main-nav">
+            <div class="logo-container">
+                <img src="assets/logo.svg" alt="Mind in Motion Logo" class="nav-logo"
+                    onerror="this.src='data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMDAgMTAwIj48Y2lyY2xlIGN4PSI1MCIgY3k9IjUwIiByPSI0MCIgZmlsbD0iIzExMSIvPjwvc3ZnPg=='">
+            </div>
+            <ul class="nav-links">
+                <li><a href="#philosophy">Philosophy</a></li>
+                <li><a href="#mindset">Mindset</a></li>
+                <li><a href="#crimson-move">The Move</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+
+        <div class="hero-content">
+            <div class="hero-logo-wrapper fade-in-up">
+                <img src="assets/logo.svg" alt="Mind in Motion Logo" class="hero-logo"
+                    onerror="this.style.display='none'">
+            </div>
+            <h1 class="hero-title fade-in-up delay-1">EVERY MOVE <span class="accent-text">MATTERS</span></h1>
+            <p class="hero-tagline fade-in-up delay-2">Life is a Game of Strategy. Play with Intention.</p>
+        </div>
+
+        <div class="background-fragments" id="hero-fragments">
+            <!-- Fragments injected by JS (Fallback if WebGL fails) -->
+        </div>
+        <div id="canvas-container"></div>
+
+        <div class="scroll-indicator fade-in delay-3">
+            <span class="mouse">
+                <span class="wheel"></span>
+            </span>
+        </div>
+    </header>
+
+    <section id="philosophy" class="content-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title reveal-text">The Opening</h2>
+                <div class="accent-line reveal-line"></div>
+            </div>
+            <div class="philosophy-content">
+                <p class="lead-text reveal-text delay-1">
+                    "Strategy requires thought, tactics require observation." – Max Euwe
+                </p>
+                <p class="body-text reveal-text delay-2">
+                    Life, like chess, is not about the next move, but the next ten moves.
+                    It demands the patience to wait for the right moment and the courage to seize it.
+                    <br><br>
+                    We build our positions piece by piece—knowledge, skill, relationships.
+                    A strong opening sets the stage for a creative middlegame and a decisive endgame.
+                </p>
+            </div>
+        </div>
+        <div class="background-element chess-grid-bg"></div>
+    </section>
+
+    <section id="mindset" class="content-section dark-mode">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title reveal-text">The Mindset</h2>
+                <div class="accent-line reveal-line"></div>
+            </div>
+            <div class="card-grid">
+                <div class="card show-on-scroll">
+                    <div class="card-icon square-icon"></div>
+                    <h3>Foresight</h3>
+                    <p>Seeing the possibilities before they manifest. Anticipating challenges and preparing the defense.
+                    </p>
+                </div>
+                <div class="card show-on-scroll delay-1">
+                    <div class="card-icon square-icon outline"></div>
+                    <h3>Discipline</h3>
+                    <p>The ability to adhere to the plan when chaos ensues. Controlling the center of the board.</p>
+                </div>
+                <div class="card show-on-scroll delay-2">
+                    <div class="card-icon square-icon accent"></div>
+                    <h3>Creativity</h3>
+                    <p>Finding the unexpected combination. The sacrifice that leads to checkmate.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="crimson-move" class="content-section crimson-highlight">
+        <div class="container relative">
+            <div class="crimson-content">
+                <h2 class="big-impact-text reveal-text">THE CRIMSON MOVE</h2>
+                <p class="impact-desc reveal-text delay-1">
+                    There comes a moment in every game where calculation ends and intuition takes over.
+                    The bold sacrifice. The decisive strike. The move that changes everything.
+                </p>
+            </div>
+            <div class="floating-shard"></div>
+            <div id="chess-piece-container"></div>
+        </div>
+    </section>
+
+    <footer id="contact" class="footer-section">
+        <div class="container">
+            <h2 class="footer-title reveal-text">Endgame</h2>
+            <div class="contact-links reveal-text delay-1">
+                <a href="#" class="contact-link">Checkmate</a>
+                <span class="separator">/</span>
+                <a href="https://www.chess.com" target="_blank" class="contact-link">Play on Chess.com</a>
+                <span class="separator">/</span>
+                <a href="#" class="contact-link">Rematch</a>
+            </div>
+            <p class="email-contact">hello@mindinmotion.dev</p>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Mind in Motion. Strategy & Design.</p>
+            </div>
+        </div>
+    </footer>
+
+    <div class="custom-cursor"></div>
+    <script src="script.js"></script>
+</body>
+
+</html>

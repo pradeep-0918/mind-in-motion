@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" fill="none">
+    <!-- Definitions for gradients or filters if needed -->
+    <defs>
+        <style>
+            .sq { fill: #111; transition: all 0.5s ease; }
+            .accent { fill: #8B0000; }
+            
+            /* Floating animation for fragments */
+            @keyframes floatOut {
+                0% { transform: translate(0, 0); opacity: 0.8; }
+                50% { transform: translate(-2px, -2px); opacity: 0.4; }
+                100% { transform: translate(0, 0); opacity: 0.8; }
+            }
+            .frag { animation: floatOut 4s infinite ease-in-out; }
+            .frag:nth-child(2n) { animation-duration: 5s; animation-delay: 1s; }
+            .frag:nth-child(3n) { animation-duration: 6s; animation-delay: 0.5s; }
+        </style>
+    </defs>
+
+    <!-- Main Head Shape (Grid based construction) -->
+    <!-- Neck -->
+    <rect x="35" y="70" width="10" height="10" class="sq" />
+    <rect x="45" y="70" width="10" height="10" class="sq" />
+    <rect x="35" y="80" width="10" height="10" class="sq" />
+    <rect x="45" y="80" width="10" height="10" class="sq" />
+
+    <!-- Chin/Jaw -->
+    <rect x="55" y="70" width="10" height="10" class="sq" />
+    <rect x="55" y="60" width="10" height="10" class="sq" />
+    <rect x="45" y="60" width="10" height="10" class="sq" />
+    
+    <!-- Face Front -->
+    <rect x="65" y="60" width="10" height="10" class="sq" />
+    <rect x="65" y="50" width="10" height="10" class="sq" />
+    <rect x="65" y="40" width="10" height="10" class="sq" /> <!-- Nose bridge area -->
+    <rect x="55" y="30" width="10" height="10" class="sq" /> <!-- Forehead -->
+    <rect x="45" y="30" width="10" height="10" class="sq" />
+
+    <!-- Cranium / Back of Head -->
+    <rect x="35" y="30" width="10" height="10" class="sq" />
+    <rect x="35" y="40" width="10" height="10" class="sq" />
+    <rect x="35" y="50" width="10" height="10" class="sq" />
+    <rect x="35" y="60" width="10" height="10" class="sq" />
+    
+    <rect x="45" y="40" width="10" height="10" class="sq" /> <!-- Mind Center -->
+    <rect x="45" y="50" width="10" height="10" class="sq accent" /> <!-- The Crimson Move (Eye/Mind) -->
+    <rect x="55" y="40" width="10" height="10" class="sq" />
+    <rect x="55" y="50" width="10" height="10" class="sq" />
+
+    <!-- Top of Head -->
+    <rect x="45" y="20" width="10" height="10" class="sq" />
+    <rect x="35" y="20" width="10" height="10" class="sq" />
+
+    <!-- Fragmenting Pieces (The "Mind in Motion") -->
+    <!-- These are flying off to the left/back -->
+    <rect x="25" y="30" width="8" height="8" class="sq frag" />
+    <rect x="15" y="20" width="6" height="6" class="sq frag" />
+    <rect x="25" y="50" width="8" height="8" class="sq frag" />
+    <rect x="10" y="40" width="5" height="5" class="sq frag" />
+    <rect x="20" y="70" width="6" height="6" class="sq frag" />
+    
+    <!-- Subtle extra fragments for detail -->
+    <rect x="5" y="25" width="4" height="4" class="sq frag" style="opacity:0.5" />
+    <rect x="15" y="60" width="4" height="4" class="sq frag" style="opacity:0.5" />
+
+</svg>
